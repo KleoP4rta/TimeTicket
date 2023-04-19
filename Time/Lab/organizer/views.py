@@ -24,13 +24,10 @@ def time(event_date):
     time = f'{days_left}, {hours_left}, {minutes_left}'
     return time
 ##############################################################
-# вывод всех мероприятий продавца
-def organizer(request):
-    context = {
-        'events': Event.objects.filter(author=request.user)
-    }
-    return render(request, '.html', context)
 
+<<<<<<< HEAD
+
+=======
 # вывод всех билетов покупателя
 def tickets(request):
     context = {
@@ -40,3 +37,4 @@ def tickets(request):
 
 def create(request):
     return render(request, '.html')
+>>>>>>> 838b421ede729ade1ee08612795ef52867abcd33
