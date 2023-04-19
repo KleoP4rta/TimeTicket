@@ -40,4 +40,3 @@ def tickets(request):
 
 def create(request):
     return render(request, '.html')
-
