@@ -9,3 +9,5 @@ class TicketAdmin(admin.ModelAdmin):
 
 admin.site.register(Event, EventAdmin)
 admin.site.register(Ticket, TicketAdmin)
+admin.site.register(Organization)
+admin.site.register(Participants)
