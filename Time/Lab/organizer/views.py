@@ -25,4 +25,16 @@ def time(event_date):
     return time
 ##############################################################
 
+<<<<<<< HEAD
 
+=======
+# вывод всех билетов покупателя
+def tickets(request):
+    context = {
+        'events': Ticket.objects.filter(author=request.user)
+    }
+    return render(request, '.html', context)
+
+def create(request):
+    return render(request, '.html')
+>>>>>>> 838b421ede729ade1ee08612795ef52867abcd33
