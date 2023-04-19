@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <a href="{%url 'register'%}">Регистрация</a>
+</head>
+<body>
+    <div>
+        {% for el in context.events %}
+        <div>
+            <h3>
+                {{ el.title }}
+
+            </h3>
+
+        </div>
+        {% endfor %}
+
+    </div>
+</body>
+</html>
