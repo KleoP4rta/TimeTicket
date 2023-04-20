@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.utils import timezone
 from django.db.models.functions import Lower
 from .models import *
-from . import *
+
 
 
 def main(request):
@@ -15,6 +15,7 @@ def main(request):
     return render(request, 'main.html', context)
 
 
+
 def time(event_date):
     now = timezone.now()
     time_left = event_date - now
@@ -25,9 +26,7 @@ def time(event_date):
     return time
 ##############################################################
 
-<<<<<<< HEAD
 
-=======
 # вывод всех билетов покупателя
 def tickets(request):
     context = {
@@ -35,6 +34,7 @@ def tickets(request):
     }
     return render(request, '.html', context)
 
+
 def create(request):
     return render(request, '.html')
->>>>>>> 838b421ede729ade1ee08612795ef52867abcd33
+

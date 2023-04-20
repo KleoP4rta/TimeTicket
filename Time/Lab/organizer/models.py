@@ -19,8 +19,8 @@ class Event(models.Model):
     title = models.CharField(null=True, verbose_name='Название', max_length=100)
     age = models.IntegerField(null=True, verbose_name='Возраст')
     date_time = models.DateTimeField(null=True, verbose_name='Дата и время')
-    buration = models.IntegerField(null=True, verbose_name='Продолжительность', max_length=100)
-    price = models.IntegerField(null=True, verbose_name='Цена', max_length=100)
+    buration = models.IntegerField(null=True, verbose_name='Продолжительность')
+    price = models.IntegerField(null=True, verbose_name='Цена')
     description_event = models.TextField(null=True, verbose_name='Описание', max_length=1000)
     mini_description_event = models.TextField(null=True, verbose_name='Краткое описание', max_length=100)
     image = models.ImageField(null=True, verbose_name='Фото', upload_to='media')
@@ -53,7 +53,7 @@ class Ticket(models.Model):
     name_ticket = models.CharField(max_length=1000, verbose_name='Название')
     description_ticket = models.TextField(null=True, verbose_name='Описание', max_length=100)
     image_ticket = models.ImageField(null=True, verbose_name='Фото')
-    price_ticket = models.IntegerField(null=True, max_length=100, verbose_name='Цена')
+    price_ticket = models.IntegerField(null=True, verbose_name='Цена')
     
     def __str__(self):
         return self.name_ticket
