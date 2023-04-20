@@ -35,6 +35,5 @@ def tickets(request):
     return render(request, '.html', context)
 
 
-def create(request):
-    return render(request, '.html')
+
 
