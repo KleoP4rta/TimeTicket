@@ -61,13 +61,10 @@ class Ticket(models.Model):
     name_ticket = models.CharField(max_length=1000, verbose_name='Название')
     description_ticket = models.TextField(null=True, verbose_name='Описание', max_length=100)
     image_ticket = models.ImageField(null=True, verbose_name='Фото')
-<<<<<<< HEAD
-    price_ticket = models.IntegerField(null=True, verbose_name='Цена')
-    
-=======
-    price_ticket = models.IntegerField(null=True, max_length=100, verbose_name='Цена')
 
->>>>>>> 0736dcc094a51c6d7002eac187b645c382e98b2b
+    price_ticket = models.IntegerField(null=True, verbose_name='Цена')
+
+
     def __str__(self):
         return self.name_ticket
 
